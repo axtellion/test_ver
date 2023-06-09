@@ -171,5 +171,5 @@ function submitFormAndRedirect(e) {
   array.push(formValues);
   console.log(array);
 
-  window.location.replace("../myPage.html");
+  window.location.replace("../page/myPage.html");
 }
