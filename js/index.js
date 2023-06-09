@@ -1,4 +1,3 @@
-// Находим все элементы с вариантами ответа
 const answerItems = document.querySelectorAll(".answers__item");
 
 const array = [];
@@ -9,7 +8,6 @@ const block3 = document.getElementById("3");
 const block4 = document.getElementById("4");
 const block5 = document.getElementById("5");
 
-// Добавляем обработчик события при клике на вариант ответа
 answerItems.forEach(function (item) {
   const nextButton = document.getElementById("nextButton");
   array.pop();
@@ -34,10 +32,8 @@ answerItems.forEach(function (item) {
   });
 });
 
-// Находим все элементы с вариантами ответа для второго вопроса
 const answerItems2 = document.querySelectorAll("#answers-2 .answers__item");
 
-// Добавляем обработчик события при клике на вариант ответа для второго вопроса
 answerItems2.forEach(function (item) {
   const nextButton = document.getElementById("nextButton2");
   const prevButton = document.getElementById("prevButton2");
@@ -47,7 +43,6 @@ answerItems2.forEach(function (item) {
   nextButton.disabled = true;
 
   item.addEventListener("click", function () {
-    // Активируем кнопку
     value = item.textContent;
 
     nextButton.disabled = false;
@@ -69,7 +64,6 @@ answerItems2.forEach(function (item) {
 
     if (array.length >= 1) {
       array.pop();
-      console.table(array);
     }
 
     block2.style.display = "none";
@@ -82,7 +76,6 @@ answerItems2.forEach(function (item) {
 
 const answerItems3 = document.querySelectorAll("#answers-3 .answers__item");
 
-// Добавляем обработчик события при клике на вариант ответа для второго вопроса
 answerItems3.forEach(function (item) {
   const nextButton = document.getElementById("nextButton3");
   const prevButton = document.getElementById("prevButton3");
@@ -91,7 +84,6 @@ answerItems3.forEach(function (item) {
   nextButton.classList.add("disabled");
   nextButton.disabled = true;
   item.addEventListener("click", function () {
-    // Активируем кнопку
     value = item.textContent;
 
     nextButton.disabled = false;
@@ -112,7 +104,6 @@ answerItems3.forEach(function (item) {
 
       if (array.length >= 2) {
         array.pop();
-        console.table(array);
       }
 
       block3.style.display = "none";
@@ -126,7 +117,6 @@ answerItems3.forEach(function (item) {
 
 const answerItems4 = document.querySelectorAll("#answers-4 .answers__item");
 
-// Добавляем обработчик события при клике на вариант ответа для второго вопроса
 answerItems4.forEach(function (item) {
   const nextButton = document.getElementById("nextButton4");
   const prevButton = document.getElementById("prevButton4");
@@ -136,7 +126,6 @@ answerItems4.forEach(function (item) {
   nextButton.classList.add("disabled");
 
   item.addEventListener("click", function () {
-    // Активируем кнопку
     value = item.textContent;
 
     nextButton.disabled = false;
