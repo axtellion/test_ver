@@ -18,13 +18,14 @@ answerItems.forEach(function (item) {
 
   item.addEventListener("click", function () {
     value = item.textContent;
+    console.log(value);
 
     nextButton.disabled = false;
     nextButton.classList.remove("disabled");
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
-
-      array.push(value);
+      const obj = { number: 1, value: value };
+      array.push(obj);
 
       block.style.display = "none";
       block2.style.display = "block";
@@ -50,8 +51,8 @@ answerItems2.forEach(function (item) {
 
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
-
-      array.push(value);
+      const obj = { number: 2, value: value };
+      array.push(obj);
 
       block2.style.display = "none";
       block3.style.display = "block";
@@ -91,8 +92,8 @@ answerItems3.forEach(function (item) {
 
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
-
-      array.push(value);
+      const obj = { number: 3, value: value };
+      array.push(obj);
 
       block3.style.display = "none";
       block4.style.display = "block";
@@ -133,9 +134,10 @@ answerItems4.forEach(function (item) {
 
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
+      const obj = { number: 4, value: value };
+      array.push(obj);
 
-      array.push(value);
-
+      console.log(array);
       block4.style.display = "none";
       block5.style.display = "block";
     });
@@ -153,5 +155,3 @@ answerItems4.forEach(function (item) {
     nextButton.disabled = true;
   });
 });
-
-console.log(array);
