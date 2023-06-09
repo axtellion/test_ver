@@ -1,279 +1,499 @@
 <html lang="en" class="translated-ltr">
-<head>
-    <base target="_parent">
-    <meta name="facebook-domain-verification" content="">
-    <meta charset="utf-8">
+  <head>
+    <base target="_parent" />
+    <meta name="facebook-domain-verification" content="" />
+    <meta charset="utf-8" />
     <title>兩分鐘和四個題目</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css">
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css" />
     <style>
-        .block-checkbox__checkbox:checked + span::before{
-            padding-top: 6px!important;
+      .block-checkbox__checkbox:checked + span::before {
+        padding-top: 6px !important;
+      }
+      .header__logo-img {
+        width: 80px;
+      }
+      .vimeo-video {
+        height: 300px;
+        width: 100%;
+        border-radius: 10%;
+      }
+
+      @media all and (max-width: 980px) {
+        .header {
+          flex-direction: column;
         }
-        .header__logo-img{
-            width: 80px;
-        }
-        .vimeo-video{
-            height: 300px;
-            width: 100%;
-            border-radius: 10%;
+        .header__info-question,
+        .header__info-numbers,
+        .header__info-minutes {
+          font-size: 1.2rem !important;
         }
 
-        @media all and (max-width: 980px){
-            .header{
-                flex-direction: column;
-            }
-            .header__info-question, .header__info-numbers,.header__info-minutes{
-                font-size: 1.2rem!important;
-            }
-
-            
-            .header__info{
-                margin: 0!important;
-                margin-top: 80px!important;
-            }
-            .homepage__wrapper {
-                background: #fff url(img/bg.png) top/300% no-repeat;
-            }
-            .vimeo-video{
-                height: 230px;
-                width: 100%;
-            }
+        .header__info {
+          margin: 0 !important;
+          margin-top: 80px !important;
         }
-
+        .homepage__wrapper {
+          background: #fff url(img/bg.png) top/300% no-repeat;
+        }
+        .vimeo-video {
+          height: 230px;
+          width: 100%;
+        }
+      }
     </style>
+  </head>
 
-
-</head>
-
-<body>
-<section class="homepage">
-    <section class="homepage__wrapper">
+  <body>
+    <section class="homepage">
+      <section class="homepage__wrapper">
         <header class="header">
-            <div class="header__logo">
-                <a href="#">
-                    <img src="img/logo.webp" alt="" class="header__logo-img">
-                </a>
-            </div>
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo.webp" alt="" class="header__logo-img" />
+            </a>
+          </div>
 
-            <div class="header__info">
-                <div class="header__info-question"><span class="header__info-numbers"><font
-                        style="vertical-align: inherit;"><font
-                        style="vertical-align: inherit;"></font>兩分鐘和四個題目</font></span><font
-                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font>
-                </div>
+          <div class="header__info">
+            <div class="header__info-question">
+              <span class="header__info-numbers"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"></font
+                  >兩分鐘和四個題目</font
+                ></span
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"> </font
+              ></font>
             </div>
+          </div>
         </header>
 
         <main class="main">
-            <div class="container">
-                <section class="main__wrapper">
-                    <h1 class="main__title"><font style="vertical-align: inherit;"><font
-                            style="vertical-align: inherit;">
-                        通過「台積電」的官方測試以使用該平臺並開始您的賺錢之旅
+          <div class="container">
+            <section class="main__wrapper">
+              <h1 class="main__title">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">
+                    通過「台積電」的官方測試以使用該平臺並開始您的賺錢之旅
+                  </font></font
+                >
+              </h1>
 
-                    </font></font></h1>
+              <section class="blocks">
+                <div class="block-left">
+                  <div class="block-left__wrapper">
+                    <img src="img/inv1.png" alt="" style="" />
 
-                    <section class="blocks">
-                        <div class="block-left">
-                            <div class="block-left__wrapper">
-                                <img src="img/inv1.png" alt="" style="">
+                    <div class="block-video">
+                      <div style="padding: 0 0 0 0; position: relative">
+                        <iframe
+                          src="https://player.vimeo.com/video/768087305?h=66b22abaaa&autoplay=1&muted=1&loop=1"
+                          class="vimeo-video"
+                          frameborder="0"
+                          allow="autoplay; fullscreen; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-left__btns">
+                    <button id="btn-go-question" class="block-left__btn mobile">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">
+                          参加考试
+                        </font></font
+                      >
+                    </button>
+                  </div>
+                </div>
 
-                                <div class="block-video">
-                                    <div style="padding: 0 0 0 0; position: relative;">
-                                        <iframe src="https://player.vimeo.com/video/768087305?h=66b22abaaa&autoplay=1&muted=1&loop=1" class="vimeo-video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block-left__btns">
-                                <button id="btn-go-question" class="block-left__btn mobile"><font
-                                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                                    参加考试
-                                    </font></font></button>
-                            </div>
+                <div
+                  id="1"
+                  class="block-right block-right-1 mobile-default-hidden visible"
+                >
+                  <div class="block-right__wrapper">
+                    <div class="block-right__title">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >題目 1</font
+                        ></font
+                      >
+                    </div>
+                    <div class="block-right__question">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >每個月多少錢對您來說才是足夠的？</font
+                        ></font
+                      >
+                    </div>
+
+                    <div id="answers-1" class="answers">
+                      <div class="answers__item answers__item-1">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >100000$</font
+                          ></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-2">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >150000$</font
+                          ></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-3">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >200000$</font
+                          ></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-4">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >500000$</font
+                          ></font
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block-right__btns">
+                    <button class="block-right__btn-prev disabled"></button>
+                    <button
+                      id="nextButton"
+                      class="block-right__btn-next disabled"
+                      disabled=""
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >下一個問題</font
+                        ></font
+                      >
+                    </button>
+                  </div>
+                </div>
+
+                <div id="2" class="block-right block-right-2">
+                  <div class="block-right__wrapper">
+                    <div class="block-right__title">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >題目 2</font
+                        ></font
+                      >
+                    </div>
+                    <div class="block-right__question">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >您想增加收入的主要目的是什麼？</font
+                        ></font
+                      >
+                    </div>
+
+                    <div id="answers-2" class="answers">
+                      <div class="answers__item answers__item-1">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >我要還清貸款
+                          </font></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-2">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >我要在經濟上幫助我的親友</font
+                          ></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-3">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >我想投資以獲取更多收入</font
+                          ></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-4">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >我想買一輛車/房子</font
+                          ></font
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block-right__btns">
+                    <button
+                      id="prevButton2"
+                      class="block-right__btn-prev"
+                    ></button>
+                    <button
+                      id="nextButton2"
+                      class="block-right__btn-next disabled"
+                      disabled=""
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >下一個問題</font
+                        ></font
+                      >
+                    </button>
+                  </div>
+                </div>
+
+                <div id="3" class="block-right block-right-3">
+                  <div class="block-right__wrapper">
+                    <div class="block-right__title">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >題目 3</font
+                        ></font
+                      >
+                    </div>
+                    <div class="block-right__question">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >您對以下哪些股票感興趣？</font
+                        ></font
+                      >
+                    </div>
+
+                    <div id="answers-3" class="answers">
+                      <div class="answers__item answers__item-1">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >只有台積電</font
+                          ></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-2">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >所有臺灣股票
+                          </font></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-3">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >所有高收益的股票</font
+                          ></font
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block-right__btns">
+                    <button
+                      id="prevButton3"
+                      class="block-right__btn-prev"
+                    ></button>
+                    <button
+                      id="nextButton3"
+                      class="block-right__btn-next disabled"
+                      disabled=""
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >下一個問題</font
+                        ></font
+                      >
+                    </button>
+                  </div>
+                </div>
+
+                <div id="4" class="block-right block-right-4">
+                  <div class="block-right__wrapper">
+                    <div class="block-right__title">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >題目 4</font
+                        ></font
+                      >
+                    </div>
+                    <div class="block-right__question">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >您是透過什麼渠道得知台積電的新投資計畫？</font
+                        ></font
+                      >
+                    </div>
+
+                    <div id="answers-4" class="answers">
+                      <div class="answers__item answers__item-1">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >戶外廣告</font
+                          ></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-2">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >網路廣告</font
+                          ></font
+                        >
+                      </div>
+                      <div class="answers__item answers__item-3">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >朋友推薦</font
+                          ></font
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block-right__btns">
+                    <button
+                      id="prevButton4"
+                      class="block-right__btn-prev"
+                    ></button>
+                    <button
+                      id="nextButton4"
+                      class="block-right__btn-next disabled"
+                      disabled=""
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >下一個問題</font
+                        ></font
+                      >
+                    </button>
+                  </div>
+                </div>
+
+                <div id="5" class="block-right block-right-7">
+                  <form action="" method="" class="block-center register-form">
+                    <div class="block-center__wrapper">
+                      <h5 class="block-center__title title-form">
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit">
+                            留下您的聯絡方式，立即開始賺錢
+                          </font></font
+                        >
+                      </h5>
+
+                      <div class="block-center__video-inputs">
+                        <div class="block-inputs">
+                          <div class="block-input__wrapper">
+                            <input
+                              class="block-inputs__item form-input"
+                              type="text"
+                              name="name"
+                              placeholder="名字 "
+                              required=""
+                            />
+                          </div>
+                          <div class="block-input__wrapper">
+                            <input
+                              class="block-inputs__item form-input"
+                              type="text"
+                              name="lastname"
+                              placeholder="姓"
+                              required=""
+                            />
+                          </div>
+                          <div class="block-input__wrapper">
+                            <input
+                              class="block-inputs__item"
+                              type="email"
+                              name="email"
+                              placeholder="電子信箱"
+                              required=""
+                              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                            />
+                          </div>
+                          <div class="block-input__wrapper">
+                            <input
+                              class="block-inputs__item"
+                              type="tel"
+                              pattern="\d{3}-\d{3}-\d{4}"
+                              name="phone2"
+                              placeholder="XXX-XXX-XXXX"
+                              required=""
+                            />
+                          </div>
                         </div>
-
-                        <div id="1" class="block-right block-right-1 mobile-default-hidden visible">
-                            <div class="block-right__wrapper">
-                                <div class="block-right__title"><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">題目 1</font></font></div>
-                                <div class="block-right__question"><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">每個月多少錢對您來說才是足夠的？</font></font></div>
-
-                                <div id="answers-1" class="answers">
-                                    <div class="answers__item answers__item-1"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">100000$</font></font></div>
-                                    <div class="answers__item answers__item-2"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">150000$</font></font></div>
-                                    <div class="answers__item answers__item-3"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">200000$</font></font></div>
-                                    <div class="answers__item answers__item-4"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">500000$</font></font></div>
-                                </div>
-                            </div>
-
-                            <div class="block-right__btns">
-                                <button class="block-right__btn-prev disabled" ></button>
-                                <button class="block-right__btn-next disabled" disabled=""><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">下一個問題</font></font></button>
-                            </div>
-                        </div>
-
-                        <div id="2" class="block-right block-right-2">
-                            <div class="block-right__wrapper">
-                                <div class="block-right__title"><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">題目 2</font></font></div>
-                                <div class="block-right__question"><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">您想增加收入的主要目的是什麼？</font></font></div>
-
-                                <div id="answers-2" class="answers">
-                                    <div class="answers__item answers__item-1"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">我要還清貸款 </font></font></div>
-                                    <div class="answers__item answers__item-2"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">我要在經濟上幫助我的親友</font></font></div>
-                                    <div class="answers__item answers__item-3"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">我想投資以獲取更多收入</font></font></div>
-                                    <div class="answers__item answers__item-4"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">我想買一輛車/房子</font></font></div>
-                                </div>
-                            </div>
-
-                            <div class="block-right__btns">
-                                <button class="block-right__btn-prev"></button>
-                                <button class="block-right__btn-next disabled" disabled=""><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">下一個問題</font></font></button>
-                            </div>
-                        </div>
-
-                        <div id="3" class="block-right block-right-3">
-                            <div class="block-right__wrapper">
-                                <div class="block-right__title"><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">題目 3</font></font></div>
-                                <div class="block-right__question"><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">您對以下哪些股票感興趣？</font></font></div>
-
-                                <div id="answers-3" class="answers">
-                                    <div class="answers__item answers__item-1"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">只有台積電</font></font></div>
-                                    <div class="answers__item answers__item-2"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有臺灣股票 </font></font></div>
-                                    <div class="answers__item answers__item-3"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有高收益的股票</font></font></div>
-
-                                </div>
-                            </div>
-
-                            <div class="block-right__btns">
-                                <button class="block-right__btn-prev"></button>
-                                <button class="block-right__btn-next disabled" disabled=""><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">下一個問題</font></font></button>
-                            </div>
-                        </div>
-
-                        <div id="4" class="block-right block-right-4">
-                            <div class="block-right__wrapper">
-                                <div class="block-right__title"><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">題目 4</font></font></div>
-                                <div class="block-right__question"><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">您是透過什麼渠道得知台積電的新投資計畫？</font></font></div>
-
-                                <div id="answers-4" class="answers">
-                                    <div class="answers__item answers__item-1"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">戶外廣告</font></font></div>
-                                    <div class="answers__item answers__item-2"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">網路廣告</font></font></div>
-                                    <div class="answers__item answers__item-3"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">朋友推薦</font></font></div>
-                                </div>
-                            </div>
-
-                            <div class="block-right__btns">
-                                <button class="block-right__btn-prev"></button>
-                                <button class="block-right__btn-next disabled" disabled=""><font style="vertical-align: inherit;"><font
-                                        style="vertical-align: inherit;">下一個問題</font></font></button>
-                            </div>
-                        </div>
-
-
-                        <div id="5" class="block-right block-right-7">
-                            <form action="" method="" class="block-center register-form">
-
-
-
-
-
-                                <div class="block-center__wrapper">
-                                    <h5 class="block-center__title title-form"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                                        留下您的聯絡方式，立即開始賺錢
-                                    </font></font></h5>
-
-                                    <div class="block-center__video-inputs">
-
-                                        <div class="block-inputs">
-                                            <div class="block-input__wrapper">
-                                                <input class="block-inputs__item form-input" type="text" name="name"
-                                                       placeholder="名字 " required="">
-                                            </div>
-                                            <div class="block-input__wrapper">
-                                                <input class="block-inputs__item form-input" type="text" name="lastname"
-                                                       placeholder="姓" required="" >
-                                            </div>
-                                            <div class="block-input__wrapper">
-                                                <input class="block-inputs__item" type="email" name="email"
-                                                       placeholder="電子信箱" required="" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-                                            </div>
-                                            <div class="block-input__wrapper">
-                                                <input class="block-inputs__item" type="tel" name="phone2"
-                                                       placeholder="" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-checkbox">
-                                        <label class="block-checkbox__label" for="ispolitical">
-                                            <input class="block-checkbox__checkbox" id="ispolitical" required=""
-                                                   type="checkbox" value="agree" checked="">
-                                            <span></span>
-                                            <span class="block-checkbox__text">
-                                                我同意此隱私政策
-                                            </span>
-                                        </label>
-                                        <label class="block-checkbox__label" for="isover">
-                                            <input class="block-checkbox__checkbox" id="isover" required=""
-                                                   type="checkbox" value="over" checked="">
-                                            <span></span>
-                                            <span class="block-checkbox__text"><font
-                                                    style="vertical-align: inherit;"><font
-                                                    style="vertical-align: inherit;">我已年滿18歲</font></font></span>
-                                        </label>
-                                        <br>
-                                        
-                                    </div>
-                                </div>
-                                <div class="btns-register">
-                                    <button class="btns-register__btn" type="submit" name="submitBtn"><font
-                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                                            登記
-                                    </font></font></button>
-                                </div>
-                            </form>
-                        </div>
-                    </section>
-                </section>
-            </div>
+                      </div>
+                      <div class="block-checkbox">
+                        <label class="block-checkbox__label" for="ispolitical">
+                          <input
+                            class="block-checkbox__checkbox"
+                            id="ispolitical"
+                            required=""
+                            type="checkbox"
+                            value="agree"
+                            checked=""
+                          />
+                          <span></span>
+                          <span class="block-checkbox__text">
+                            我同意此隱私政策
+                          </span>
+                        </label>
+                        <label class="block-checkbox__label" for="isover">
+                          <input
+                            class="block-checkbox__checkbox"
+                            id="isover"
+                            required=""
+                            type="checkbox"
+                            value="over"
+                            checked=""
+                          />
+                          <span></span>
+                          <span class="block-checkbox__text"
+                            ><font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >我已年滿18歲</font
+                              ></font
+                            ></span
+                          >
+                        </label>
+                        <br />
+                      </div>
+                    </div>
+                    <div class="btns-register">
+                      <a href="./myPage.html">
+                        <button
+                          onclick="submitFormAndRedirect()"
+                          onclick="redirectToPage()"
+                          class="btns-register__btn"
+                          type="submit"
+                          name="submitBtn"
+                        >
+                          <font style="vertical-align: inherit"
+                            ><font style="vertical-align: inherit">
+                              登記
+                            </font></font
+                          >
+                        </button></a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </section>
+            </section>
+          </div>
         </main>
+      </section>
     </section>
-</section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      function submitFormAndRedirect() {
+        event.preventDefault();
 
-
-
-
-
-
-</body>
+        window.location.href = "./myPage.html";
+      }
+    </script>
+  </body>
 </html>
