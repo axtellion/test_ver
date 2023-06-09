@@ -372,7 +372,12 @@
                 </div>
 
                 <div id="5" class="block-right block-right-7">
-                  <form action="" method="" class="block-center register-form">
+                  <form
+                    id="myForm"
+                    method=""
+                    action=""
+                    class="block-center register-form"
+                  >
                     <div class="block-center__wrapper">
                       <h5 class="block-center__title title-form">
                         <font style="vertical-align: inherit"
@@ -461,21 +466,20 @@
                       </div>
                     </div>
                     <div class="btns-register">
-                      <a href="./myPage.html">
-                        <button
-                          onclick="submitFormAndRedirect()"
-                          onclick="redirectToPage()"
-                          class="btns-register__btn"
-                          type="submit"
-                          name="submitBtn"
-                        >
-                          <font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit">
-                              登記
-                            </font></font
-                          >
-                        </button></a
+                    
+                         <button
+                        onclick="submitFormAndRedirect()"
+                        class="btns-register__btn"
+                        type="button"
+                        name="submitBtn"
                       >
+                        <font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit">
+                            登記
+                          </font></font
+                        >
+                      </button>
+                    
                     </div>
                   </form>
                 </div>
@@ -488,12 +492,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/index.js"></script>
-    <script>
-      function submitFormAndRedirect() {
-        event.preventDefault();
-
-        window.location.href = "./myPage.html";
-      }
     </script>
   </body>
 </html>

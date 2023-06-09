@@ -18,7 +18,6 @@ answerItems.forEach(function (item) {
 
   item.addEventListener("click", function () {
     value = item.textContent;
-    console.log(value);
 
     nextButton.disabled = false;
     nextButton.classList.remove("disabled");
@@ -155,3 +154,22 @@ answerItems4.forEach(function (item) {
     nextButton.disabled = true;
   });
 });
+
+function submitFormAndRedirect(e) {
+  var formValues = {};
+
+  var formElements = document.getElementById("myForm").elements;
+
+  for (var i = 0; i < formElements.length; i++) {
+    var element = formElements[i];
+
+    if (element.name && element.value) {
+      formValues[element.name] = element.value;
+    }
+  }
+
+  array.push(formValues);
+  console.log(array);
+
+  window.location.replace("../myPage.html");
+}
