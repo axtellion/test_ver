@@ -97,21 +97,21 @@ answerItems3.forEach(function (item) {
       block3.style.display = "none";
       block4.style.display = "block";
     });
+  });
+  prevButton.addEventListener("click", function (e) {
+    e.preventDefault();
 
-    prevButton.addEventListener("click", function (e) {
-      e.preventDefault();
-      const nextButton = document.getElementById("nextButton2");
+    const nextButton = document.getElementById("nextButton2");
 
-      if (array.length >= 2) {
-        array.pop();
-      }
+    if (array.length >= 2) {
+      array.pop();
+    }
 
-      block3.style.display = "none";
-      block2.style.display = "block";
+    block3.style.display = "none";
+    block2.style.display = "block";
 
-      nextButton.classList.add("disabled");
-      nextButton.disabled = true;
-    });
+    nextButton.classList.add("disabled");
+    nextButton.disabled = true;
   });
 });
 
