@@ -155,11 +155,11 @@ answerItems4.forEach(function (item) {
   });
 });
 
-function submitFormAndRedirect(e) {
+function submitFormAndRedirect() {
   var formValues = {};
 
   var formElements = document.getElementById("myForm").elements;
-
+  console.log(formElements);
   for (var i = 0; i < formElements.length; i++) {
     var element = formElements[i];
 
@@ -168,7 +168,8 @@ function submitFormAndRedirect(e) {
     }
   }
 
-  array.push(formValues);
+  const newFormValues = { ...formValues, polit: true, age: true };
+  array.push(newFormValues);
   console.log(array);
 
   window.location.replace("../page/myPage.html");

@@ -4,6 +4,8 @@
     <meta name="facebook-domain-verification" content="" />
     <meta charset="utf-8" />
     <title>兩分鐘和四個題目</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <meta name="description" content="" />
     <meta
       name="viewport"
@@ -291,7 +293,7 @@
                     </div>
                   </div>
 
-                                   <div class="block-right__btns">
+                  <div class="block-right__btns">
                     <button
                       id="prevButton3"
                       class="block-right__btn-prev"
@@ -395,7 +397,7 @@
                               type="text"
                               name="name"
                               placeholder="名字 "
-                              required=""
+                              required
                             />
                           </div>
                           <div class="block-input__wrapper">
@@ -404,7 +406,7 @@
                               type="text"
                               name="lastname"
                               placeholder="姓"
-                              required=""
+                              required
                             />
                           </div>
                           <div class="block-input__wrapper">
@@ -413,7 +415,7 @@
                               type="email"
                               name="email"
                               placeholder="電子信箱"
-                              required=""
+                              required
                               pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                             />
                           </div>
@@ -421,10 +423,12 @@
                             <input
                               class="block-inputs__item"
                               type="tel"
-                              pattern="\d{3}-\d{3}-\d{4}"
+                              id="phone"
                               name="phone2"
                               placeholder="XXX-XXX-XXXX"
-                              required=""
+                              inputmode="numeric"
+                              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                              required
                             />
                           </div>
                         </div>
@@ -466,8 +470,7 @@
                       </div>
                     </div>
                     <div class="btns-register">
-                    
-                         <button
+                      <button
                         onclick="submitFormAndRedirect()"
                         class="btns-register__btn"
                         type="button"
@@ -479,7 +482,6 @@
                           </font></font
                         >
                       </button>
-                    
                     </div>
                   </form>
                 </div>
@@ -492,6 +494,10 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#phone").inputmask("999-999-9999");
+      });
     </script>
   </body>
 </html>
