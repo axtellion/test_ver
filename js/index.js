@@ -10,6 +10,7 @@ const block5 = document.getElementById("5");
 
 answerItems.forEach(function (item) {
   const nextButton = document.getElementById("nextButton");
+
   array.pop();
   let value = "";
 
@@ -17,12 +18,21 @@ answerItems.forEach(function (item) {
   nextButton.disabled = true;
 
   item.addEventListener("click", function () {
+    const previousSelectedItem = document.querySelector(".answers__item.focus");
+
+    if (previousSelectedItem) {
+      previousSelectedItem.classList.remove("focus");
+    }
+
+    item.classList.add("focus");
     value = item.textContent;
 
     nextButton.disabled = false;
     nextButton.classList.remove("disabled");
+
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
+
       const obj = { number: 1, value: value };
       array.push(obj);
 
@@ -43,6 +53,13 @@ answerItems2.forEach(function (item) {
   nextButton.disabled = true;
 
   item.addEventListener("click", function () {
+    const previousSelectedItem = document.querySelector(".answers__item.focus");
+    if (previousSelectedItem) {
+      previousSelectedItem.classList.remove("focus");
+    }
+
+    item.classList.add("focus");
+
     value = item.textContent;
 
     nextButton.disabled = false;
@@ -83,7 +100,15 @@ answerItems3.forEach(function (item) {
 
   nextButton.classList.add("disabled");
   nextButton.disabled = true;
+
   item.addEventListener("click", function () {
+    const previousSelectedItem = document.querySelector(".answers__item.focus");
+    if (previousSelectedItem) {
+      previousSelectedItem.classList.remove("focus");
+    }
+
+    item.classList.add("focus");
+
     value = item.textContent;
 
     nextButton.disabled = false;
@@ -126,6 +151,14 @@ answerItems4.forEach(function (item) {
   nextButton.classList.add("disabled");
 
   item.addEventListener("click", function () {
+    const previousSelectedItem = document.querySelector(".answers__item.focus");
+
+    if (previousSelectedItem) {
+      previousSelectedItem.classList.remove("focus");
+    }
+
+    item.classList.add("focus");
+
     value = item.textContent;
 
     nextButton.disabled = false;
