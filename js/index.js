@@ -189,21 +189,25 @@ answerItems4.forEach(function (item) {
 });
 
 function submitFormAndRedirect() {
-  var formValues = {};
+  addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  var formElements = document.getElementById("myForm").elements;
-  console.log(formElements);
-  for (var i = 0; i < formElements.length; i++) {
-    var element = formElements[i];
+    const formValues = {};
 
-    if (element.name && element.value) {
-      formValues[element.name] = element.value;
+    const formElements = document.getElementById("myForm").elements;
+
+    for (let i = 0; i < formElements.length; i++) {
+      const element = formElements[i];
+
+      if (element.name && element.value) {
+        formValues[element.name] = element.value;
+      }
     }
-  }
 
-  const newFormValues = { ...formValues, polit: true, age: true };
-  array.push(newFormValues);
-  console.log(array);
+    const newFormValues = { ...formValues, polit: true, age: true };
+    array.push(newFormValues);
+    console.log(array);
 
-  window.location.replace("../page/myPage.html");
+    window.location.replace("../page/myPage.html");
+  });
 }
