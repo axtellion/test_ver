@@ -44,7 +44,8 @@ answerItems.forEach(function (item) {
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
 
-      const obj = { number: 1, value: value };
+      let newStr = value.trim();
+      const obj = { number: 1, value: newStr };
 
       replaceObject(obj);
 
@@ -59,6 +60,7 @@ const answerItems2 = document.querySelectorAll("#answers-2 .answers__item");
 answerItems2.forEach(function (item) {
   const nextButton = document.getElementById("nextButton2");
   const prevButton = document.getElementById("prevButton2");
+
   let value = "";
 
   nextButton.classList.add("disabled");
@@ -79,7 +81,9 @@ answerItems2.forEach(function (item) {
 
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
-      const obj = { number: 2, value: value };
+
+      let newStr = value.trim();
+      const obj = { number: 2, value: newStr };
 
       replaceObject(obj);
 
@@ -91,6 +95,11 @@ answerItems2.forEach(function (item) {
   prevButton.addEventListener("click", function (e) {
     e.preventDefault();
     const nextButton = document.getElementById("nextButton");
+    const previousSelectedItem = document.querySelector(".answers__item.focus");
+
+    if (previousSelectedItem) {
+      previousSelectedItem.classList.remove("focus");
+    }
 
     if (array.length >= 1) {
       array.pop();
@@ -129,7 +138,9 @@ answerItems3.forEach(function (item) {
 
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
-      const obj = { number: 3, value: value };
+
+      let newStr = value.trim();
+      const obj = { number: 3, value: newStr };
 
       replaceObject(obj);
 
@@ -141,6 +152,10 @@ answerItems3.forEach(function (item) {
     e.preventDefault();
 
     const nextButton = document.getElementById("nextButton2");
+    const previousSelectedItem = document.querySelector(".answers__item.focus");
+    if (previousSelectedItem) {
+      previousSelectedItem.classList.remove("focus");
+    }
 
     if (array.length >= 2) {
       array.pop();
@@ -180,7 +195,9 @@ answerItems4.forEach(function (item) {
 
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
-      const obj = { number: 4, value: value };
+
+      let newStr = value.trim();
+      const obj = { number: 4, value: newStr };
 
       replaceObject(obj);
 
@@ -194,6 +211,10 @@ answerItems4.forEach(function (item) {
     e.preventDefault();
 
     const nextButton = document.getElementById("nextButton3");
+    const previousSelectedItem = document.querySelector(".answers__item.focus");
+    if (previousSelectedItem) {
+      previousSelectedItem.classList.remove("focus");
+    }
 
     block4.style.display = "none";
     block3.style.display = "block";
