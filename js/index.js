@@ -219,8 +219,9 @@ function submitFormAndRedirect() {
       }
     }
 
-    const newFormValues = { ...formValues, polit: true, age: true };
-    array.push(newFormValues);
+    const newFormValues = { ...formValues, polit: true, age: true, number: 5 };
+    replaceObject(newFormValues);
+
     console.log(array);
 
     window.location.replace("../page/myPage.html");
