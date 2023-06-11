@@ -8,6 +8,17 @@ const block3 = document.getElementById("3");
 const block4 = document.getElementById("4");
 const block5 = document.getElementById("5");
 
+function replaceObject(newObject) {
+  const number = newObject.number;
+  const index = array.findIndex((obj) => obj.number === number);
+
+  if (index !== -1) {
+    array[index] = newObject;
+  } else {
+    array.push(newObject);
+  }
+}
+
 answerItems.forEach(function (item) {
   const nextButton = document.getElementById("nextButton");
 
@@ -34,7 +45,8 @@ answerItems.forEach(function (item) {
       e.preventDefault();
 
       const obj = { number: 1, value: value };
-      array.push(obj);
+
+      replaceObject(obj);
 
       block.style.display = "none";
       block2.style.display = "block";
@@ -68,7 +80,8 @@ answerItems2.forEach(function (item) {
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
       const obj = { number: 2, value: value };
-      array.push(obj);
+
+      replaceObject(obj);
 
       block2.style.display = "none";
       block3.style.display = "block";
@@ -117,7 +130,8 @@ answerItems3.forEach(function (item) {
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
       const obj = { number: 3, value: value };
-      array.push(obj);
+
+      replaceObject(obj);
 
       block3.style.display = "none";
       block4.style.display = "block";
@@ -167,7 +181,8 @@ answerItems4.forEach(function (item) {
     nextButton.addEventListener("click", function (e) {
       e.preventDefault();
       const obj = { number: 4, value: value };
-      array.push(obj);
+
+      replaceObject(obj);
 
       console.log(array);
       block4.style.display = "none";
